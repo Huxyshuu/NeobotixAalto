@@ -10,7 +10,7 @@ This documentation is intended as a practical starting point for students, resea
 
 !!! note "Scope"
 
-    These pages are a local research documentation foundation. They do **not** replace the Neobotix hardware manual, the delivered inspection document, Aalto laboratory instructions, or project-specific safety training.
+    These pages are a local research documentation. They do **not** replace the Neobotix hardware manual or other official documentation.
 
 ## What is documented here?
 
@@ -22,41 +22,45 @@ This documentation is intended as a practical starting point for students, resea
 
 -   :material-console-line: **Basic setup**
 
-    Publicly available ROS 2 and simulation setup notes based on Neobotix documentation, plus placeholders for Aalto-specific network details.
-
--   :material-shield-check: **Safe operation**
-
-    Pre-operation checks, emergency-stop awareness, controlled test-area assumptions, and minimum safety reminders.
+    Publicly available ROS 2 and simulation setup notes based on Neobotix documentation, plus **Aalto-specific** setup details.
 
 -   :material-flask-outline: **Research workflows**
 
     Suggested structure for experiments, logging, data collection, and repeatable development.
 
+-   :material-shield-check: **Project documentation template**
+
+    Template for adding new projects into the documentation to allow people of the future to work on them better. 
+
 </div>
-
-## Context: TwinFlow and Aalto research
-
-TwinFlow focuses on improving production and intralogistics operations through data-driven, interoperable, and digital-twin-enabled approaches. Within that context, the ROX-Diff AMR can act as a physical research asset for autonomous material-flow experiments, sensing, navigation, fleet logic, and integration between operational technology and information systems.
-
-The robot should be treated as both:
-
-1. a **mobile robot platform** for ROS 2-based autonomy research, and
-2. a **TwinFlow demonstrator asset** for studying data exchange, situational awareness, and intralogistics workflows.
 
 ## Platform at a glance
 
-| Item | Description |
+| Item | ROX-Diff value |
 |---|---|
 | Robot | Neobotix ROX-Diff AMR |
-| Drive type | Central differential drive |
-| Typical use | Research, development, intralogistics experiments |
+| Drive / mobility | Central differential drive; not omnidirectional |
+| Minimum dimensions | 740 × 680 × 330 mm `(L × W × H)` |
+| Payload | Up to 300 kg |
+| Speed | Up to 1.5 m/s |
+| Uptime | Depends on selected battery |
+| Safety sensors | 2 × safety laser scanners with 360° field of view |
+| Battery options | AGM, 48 V, 26–78 Ah, cost-efficient; or LiFePO4, 48 V, 21–63 Ah, rapid-charging capable |
+| Safety controller | SICK Flexi Soft EFI-pro, programmable and extendable |
+| Options | Charging station, wireless emergency stop, IOBoard, and other project-specific options |
+| Arm integration | Supported |
 | Main middleware | ROS 2 / Neobotix ROX stack |
 | Project context | TwinFlow, Aalto University |
 | Local status | Fill in local robot ID, lab location, maintainers, and network details |
 
-!!! warning "Do not publish sensitive local details"
+!!! note "More detailed information and specifications"
+    [ROX Data Sheet](https://www.neobotix-robots.com/fileadmin/images/downloads/Datenbl%C3%A4tter/Data-Sheet_ROX.pdf)
+    
+    [ROX Operating Manual and general instructions](https://neobotix-docs.de/hardware/en/ROX.pdf)
 
-    Keep internal IP addresses, access credentials, Wi-Fi passwords, VPN details, and lab-specific safety procedures in protected internal documentation unless the site is private.
+<!--!!! warning "Do not publish sensitive local details"
+
+    Keep internal access credentials, Wi-Fi passwords, VPN details, and lab-specific safety procedures in protected internal documentation unless the site is private.-->
 
 ## Recommended first steps
 
