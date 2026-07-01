@@ -307,10 +307,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#local-preview" class="md-nav__link">
+  <a href="#initial-setup" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Local preview
+        Initial setup
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#previewing-local-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Previewing local changes
       </span>
     </span>
   </a>
@@ -322,6 +333,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         Current page structure
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-documentation-for-new-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Adding documentation for new projects
       </span>
     </span>
   </a>
@@ -401,10 +423,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-checklist" class="md-nav__link">
+  <a href="#documentation-checklist-for-maintainer-dont-worry-about-this" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Documentation checklist
+        Documentation checklist for maintainer, don't worry about this
       </span>
     </span>
   </a>
@@ -697,7 +719,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Projects/_template/" class="md-nav__link ">
+            <a href="../Projects/Template/" class="md-nav__link ">
               
   
   
@@ -706,7 +728,7 @@
   <span class="md-ellipsis">
     
   
-   template
+  Template
 
     
   </span>
@@ -727,7 +749,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-   template
+  Template
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -741,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Projects/_template/experiments/" class="md-nav__link">
+      <a href="../Projects/Template/experiments/" class="md-nav__link">
         
   
   
@@ -770,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Projects/_template/operation/" class="md-nav__link">
+      <a href="../Projects/Template/operation/" class="md-nav__link">
         
   
   
@@ -799,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Projects/_template/setup/" class="md-nav__link">
+      <a href="../Projects/Template/setup/" class="md-nav__link">
         
   
   
@@ -828,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Projects/_template/troubleshooting/" class="md-nav__link">
+      <a href="../Projects/Template/troubleshooting/" class="md-nav__link">
         
   
   
@@ -906,10 +928,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#local-preview" class="md-nav__link">
+  <a href="#initial-setup" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Local preview
+        Initial setup
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#previewing-local-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Previewing local changes
       </span>
     </span>
   </a>
@@ -921,6 +954,17 @@
     <span class="md-ellipsis">
       <span class="md-typeset">
         Current page structure
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-documentation-for-new-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Adding documentation for new projects
       </span>
     </span>
   </a>
@@ -1000,10 +1044,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-checklist" class="md-nav__link">
+  <a href="#documentation-checklist-for-maintainer-dont-worry-about-this" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Documentation checklist
+        Documentation checklist for maintainer, don't worry about this
       </span>
     </span>
   </a>
@@ -1035,64 +1079,103 @@
 
 <h1 id="editing-the-documentation">Editing the documentation<a class="headerlink" href="#editing-the-documentation" title="Permanent link">&para;</a></h1>
 <p>This page explains how to maintain the ROX-Diff documentation using the Zensical documentation style.</p>
-<h2 id="local-preview">Local preview<a class="headerlink" href="#local-preview" title="Permanent link">&para;</a></h2>
-<p>From the documentation project root, run:</p>
-<div class="language-bash highlight"><span class="filename">Preview the site</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>zensical<span class="w"> </span>serve
+<h2 id="initial-setup">Initial setup<a class="headerlink" href="#initial-setup" title="Permanent link">&para;</a></h2>
+<p>To edit the documentation, clone the repository and setup the virtual environment (venv)</p>
+<div class="language-bash highlight"><span class="filename">Environment setup</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Huxyshuu/NeobotixAalto
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>pip<span class="w"> </span>install<span class="w"> </span>zensical
 </span></code></pre></div>
-<p>Build the static site with:</p>
-<div class="language-bash highlight"><span class="filename">Build the site</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>zensical<span class="w"> </span>build
+<h2 id="previewing-local-changes">Previewing local changes<a class="headerlink" href="#previewing-local-changes" title="Permanent link">&para;</a></h2>
+<p>To preview the live changes from local files, ensure that you have activated the venv and are in the right folder, then run:</p>
+<div class="language-bash highlight"><span class="filename">Preview the site</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Make sure you have activated the venv from previous step</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>NeobotixAalto
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>zensical<span class="w"> </span>serve
+</span></code></pre></div>
+<p>Building the static site is not necessarily needed, since any merged pull requests will be automatically updated to the documentation. Nevertheless, the static site can be built with:</p>
+<div class="language-bash highlight"><span class="filename">Build the site</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>zensical<span class="w"> </span>build
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Keep page names short and stable. Other project notes, lab procedures, and experiment reports may link to them.</p>
+<p>Keep page names concise and stable. Don't change them later in the future, since other parts of the documentation may refer to them and the links might break.</p>
 </div>
 <h2 id="current-page-structure">Current page structure<a class="headerlink" href="#current-page-structure" title="Permanent link">&para;</a></h2>
-<div class="language-text highlight"><span class="filename">Recommended docs directory</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docs/
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── index.md
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── setup.md
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── operation.md
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── research.md
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── safety.md
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└── documentation.md
-</span></code></pre></div>
+<p>All changes done to the documentation should focus on the <em>docs</em> directory
+<div class="language-text highlight"><span class="filename">Overview of docs directory</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docs/
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── index.md
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── setup.md
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── documentation.md
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>...
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>...
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>├── safety.md
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>└── Projects 
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  ├─ index.md
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  ...
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  ...
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  ├── instructions.md
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  └── Template
+</span></code></pre></div></p>
+<h2 id="adding-documentation-for-new-projects">Adding documentation for new projects<a class="headerlink" href="#adding-documentation-for-new-projects" title="Permanent link">&para;</a></h2>
+<p>Adding or editing documentation for projects done on the ROX, please refer to the <a href="../Projects/instructions/">instructions</a> in the <em>Projects/</em> folder. </p>
 <h2 id="writing-style">Writing style<a class="headerlink" href="#writing-style" title="Permanent link">&para;</a></h2>
-<p>Use a practical, lab-oriented style:</p>
+<p>When editing documentation for the robot, or creating new projects or other pages, please follow the general style convention used for rest of the pages. This keeps the overall documentation clean and readable for everyone. Aim to write clear instructions:</p>
 <ul>
-<li>write commands that can be copied and tested;</li>
+<li>write commands that can be copied and tested</li>
 <li>explain where local values must be filled in;</li>
 <li>separate public information from private Aalto/lab information;</li>
 <li>prefer checklists for operation and safety steps;</li>
-<li>include warnings for steps that can move the robot or affect safety;</li>
-<li>link to official Neobotix documentation instead of copying long sections.</li>
+<li>include necessary warnings for steps that can move the robot or affect safety;</li>
+<li>link to official Neobotix/ROS documentation instead of copying long sections.</li>
 </ul>
 <h2 id="useful-zensical-patterns">Useful Zensical patterns<a class="headerlink" href="#useful-zensical-patterns" title="Permanent link">&para;</a></h2>
 <h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h3>
-<div class="language-markdown highlight"><span class="filename">Admonition example</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>!!! warning &quot;Verify before motion&quot;
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    Confirm the safety state before sending velocity commands.
-</span></code></pre></div>
-<h3 id="collapsible-details">Collapsible details<a class="headerlink" href="#collapsible-details" title="Permanent link">&para;</a></h3>
-<div class="language-markdown highlight"><span class="filename">Details example</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>??? info &quot;Troubleshooting&quot;
+<div class="language-markdown highlight"><span class="filename">Admonition example</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>!!! warning &quot;Verify before motion&quot;
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    Add longer diagnostic notes here.
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    Confirm the safety state before sending velocity commands.
 </span></code></pre></div>
-<h3 id="content-tabs">Content tabs<a class="headerlink" href="#content-tabs" title="Permanent link">&para;</a></h3>
-<div class="language-markdown highlight"><span class="filename">Tabs example</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>=== &quot;Real robot&quot;
+<div class="admonition warning">
+<p class="admonition-title">Verify before motion</p>
+<p>Confirm the safety state before sending velocity commands.</p>
+</div>
+<h3 id="collapsible-details">Collapsible details<a class="headerlink" href="#collapsible-details" title="Permanent link">&para;</a></h3>
+<div class="language-markdown highlight"><span class="filename">Details example</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>??? info &quot;Troubleshooting&quot;
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    Instructions for the physical robot.
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>=== &quot;Simulation&quot;
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    Instructions for Gazebo or offline testing.
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    Add longer diagnostic notes here.
 </span></code></pre></div>
+<details class="info">
+<summary>Troubleshooting</summary>
+<p>Add longer diagnostic notes here.</p>
+</details>
+<h3 id="content-tabs">Content tabs<a class="headerlink" href="#content-tabs" title="Permanent link">&para;</a></h3>
+<div class="language-markdown highlight"><span class="filename">Tabs example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>=== &quot;Real robot&quot;
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    Instructions for the physical robot.
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>=== &quot;Simulation&quot;
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    Instructions for Gazebo or offline testing.
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Real robot</label><label for="__tabbed_1_2">Simulation</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Instructions for the physical robot.</p>
+</div>
+<div class="tabbed-block">
+<p>Instructions for Gazebo or offline testing.</p>
+</div>
+</div>
+</div>
 <h3 id="mermaid-diagrams">Mermaid diagrams<a class="headerlink" href="#mermaid-diagrams" title="Permanent link">&para;</a></h3>
-<div class="language-markdown highlight"><span class="filename">Mermaid example</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>``` mermaid
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>graph LR
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  A[Client PC] --&gt; B[Robot PC]
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  B --&gt; C[ROS 2 topics]
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>```
+<p><div class="language-markdown highlight"><span class="filename">Mermaid example</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>``` mermaid
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>graph LR
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  A[Client PC] --&gt; B[Robot PC]
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  B --&gt; C[ROS 2 topics]
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>```
 </span></code></pre></div>
-<h2 id="documentation-checklist">Documentation checklist<a class="headerlink" href="#documentation-checklist" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>graph LR
+  A[Client PC] --&gt; B[Robot PC]
+  B --&gt; C[ROS 2 topics]</code></pre></p>
+<h2 id="documentation-checklist-for-maintainer-dont-worry-about-this">Documentation checklist for maintainer, don't worry about this<a class="headerlink" href="#documentation-checklist-for-maintainer-dont-worry-about-this" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add local robot identity and maintainer information.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Add exact robot network procedure in a protected/internal page.</li>

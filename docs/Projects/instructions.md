@@ -6,6 +6,8 @@ icon: lucide/list-checks
 
 Use this page when creating a new project entry under `docs/Projects/`. The project can be a research activity, thesis/student project, integration test, temporary benchmark, hardware trial, or internal demo.
 
+Projects should be added into their own **named** folders in the *Projects/* folder, for example *Projects/VDA5050_Crane/*
+
 !!! success "Main rule"
 
     Document the project so that a new person can understand the goal, rebuild the setup, run the main workflow, find the outputs, and know what is safe or unsafe without asking the original maintainer.
@@ -165,4 +167,3 @@ Before archiving the project, check:
 !!! danger "Do not document secrets"
 
     Do not place passwords, private keys, VPN details, private Wi-Fi credentials, internal IPs, or access tokens in public documentation. Use protected internal storage and link to it only when appropriate.
-
