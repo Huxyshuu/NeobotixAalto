@@ -105,3 +105,9 @@ If the robot behaves unexpectedly, record:
 - open rviz with map : ros2 launch rox_navigation navigation.launch.py map:=/home/neobotix/ros2_workspace/src/rox/rox_navigation/maps/my_map.yaml
 
 - teleop : ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+Connect virtual desktop using Remmina Remote Desktop client:
+ - protocol: Remmina VNC Plugin
+ - server: 192.168.0.50:5900 or [uni-aalto.local]:5900
+ - username: neobotix
+ - password: ****
