@@ -93,3 +93,15 @@ If the robot behaves unexpectedly, record:
 - last command sent;
 - relevant terminal logs;
 - whether emergency stop or safety scanner intervention occurred.
+
+
+
+
+## STUFF TO WRITE
+- launch nav : ros2 launch rox_navigation mapping.launch.py
+- open rviz after nav : ros2 launch neo_nav2_bringup rviz_launch.py
+
+- save map : ros2 run nav2_map_server map_saver_cli -f ~/ros2_workspace/src/rox/rox_navigation/maps/my_map
+- open rviz with map : ros2 launch rox_navigation navigation.launch.py map:=/home/neobotix/ros2_workspace/src/rox/rox_navigation/maps/my_map.yaml
+
+- teleop : ros2 run teleop_twist_keyboard teleop_twist_keyboard
